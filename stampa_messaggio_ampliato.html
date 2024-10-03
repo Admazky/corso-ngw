@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stampa Messaggio Ampliato</title>
+</head>
+<body>
+    <h1>Stampa Messaggio Ampliato</h1>
+    
+    <script>
+        while (true) {
+            // Chiede il messaggio
+            let messaggio = prompt("Inserisci il messaggio (o scrivi 'ESCI' per uscire):");
+            
+            // Se l'utente inserisce "ESCI", interrompe il ciclo
+            if (messaggio === "ESCI") {
+                console.log("Hai chiuso il programma.");
+                break;
+            }
+            
+            // Chiede quante volte ripetere il messaggio
+            let volte = parseInt(prompt("Quante volte vuoi che venga ripetuto?"));
+
+            // Ripete il messaggio
+            for (let i = 0; i < volte; i++) {
+                console.log(messaggio);
+            }
+        }
+    </script>
+</body>
+</html>
